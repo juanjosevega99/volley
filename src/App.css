@@ -1,46 +1,29 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+body {
+  margin: 0;
+  padding: 0;
 }
 
 .container {
   display: flex;
-  flex-direction: row;
-  height: 100%;
+  flex-direction: column;
+  height: 100vh;
+  cursor: pointer;
 }
 
 .up {
-  width: 50%;
-  background-color: red;
+  flex: 1;
+  background-color: #b61615;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
 }
 
-/* Set the background color of the right column to blue */
 .down {
-  width: 50%;
-  background-color: blue;
+  flex: 1;
+  background-color: #00152c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
 }
